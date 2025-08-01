@@ -75,6 +75,7 @@ const HeroSection = () => {
   </p>
 
 {/* <a href="#projects" className=" cursor-pointer !mt-8 w-1/2 !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"> */}
+<div className="flex gap-2 sm:flex-row flex-col">
 <motion.a
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.97 }}
@@ -84,6 +85,16 @@ const HeroSection = () => {
      <h2 className="text-center">{profileSection.buttonText}</h2>
   </motion.a>
 {/* </a> */}
+<motion.a
+    whileHover={{ scale: 1.05 }}
+    whileTap={{ scale: 0.97 }}
+    className=" cursor-pointer !mt-8 w-[300px] !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"
+    href="https://docs.google.com/document/d/13b8Bs4RGjs1HP-tIay2kjyfiJHF37U53DOuj-_nackk/edit?usp=drive_link"
+  >
+     <h2 className="text-center">View Resume</h2>
+  </motion.a>
+
+</div>
 </motion.div>
 
       </section>

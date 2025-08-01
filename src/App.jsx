@@ -9,6 +9,7 @@ import ContactForm from './components/form/ContactForm'
 import { Projects } from './components/project'
 import ScrollLinkedProjects from './components/project/scrollproject'
 import Footer from './components/footer/Footer'
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
@@ -24,7 +25,7 @@ const App = () => {
    <ContactForm/>
  </Container>
  <Footer/>
-
+ <Toaster position="top-right" reverseOrder={false} />
     
     </>
   )
