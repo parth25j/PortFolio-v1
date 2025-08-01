@@ -179,7 +179,7 @@ const ContactForm = () => {
         <div className="w-full flex justify-center">
           <motion.button
             type="submit"
-            className="w-1/2 !m-auto border-2 bg-blue-600 text-white !py-2 rounded hover:bg-blue-700 transition"
+            className="w-1/2 !m-auto border-2 bg-blue-600 text-white !py-2 rounded hover:bg-blue-700 transition cursor-pointer"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
