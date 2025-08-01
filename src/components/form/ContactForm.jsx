@@ -78,7 +78,7 @@ const ContactForm = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        Submit
+        Submit Now!
       </motion.button>
    </div>
     </motion.form>
