@@ -90,6 +90,7 @@ const HeroSection = () => {
     whileTap={{ scale: 0.97 }}
     className=" cursor-pointer !mt-8 w-[300px] !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"
     href="https://docs.google.com/document/d/13b8Bs4RGjs1HP-tIay2kjyfiJHF37U53DOuj-_nackk/edit?usp=drive_link"
+    target="_blank"
   >
      <h2 className="text-center">View Resume</h2>
   </motion.a>
