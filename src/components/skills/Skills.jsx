@@ -306,7 +306,7 @@ const SkillsSection = () => {
   const isHeaderInView = useInView(headerRef, { once: true, amount: 0.5 });
 
   return (
-    <section className="!py-20 !px-4 max-w-6xl !mx-auto">
+    <section className="!py-20 !px-4 max-w-6xl !mx-auto" id='skills'>
       {/* Section Header */}
       <motion.div
         ref={headerRef}

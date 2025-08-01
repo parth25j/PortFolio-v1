@@ -24,7 +24,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className=" h-screen flex items-center justify-center !text-white " id="contact">
+    <div className=" h-screen !mb-[200px] flex !mx-auto items-center justify-center !text-white " id="contact">
       <motion.form
       onSubmit={handleSubmit}
       className="max-w-md !mx-auto p-6 bg-white rounded-lg shadow-md"
@@ -33,7 +33,7 @@ const ContactForm = () => {
       transition={{ duration: 0.6, ease: "easeOut" }}
       className=" w-[350px] border-2 !p-4 rounded-2xl sm:w-[600px] sm:h-[700px] flex flex-col justify-evenly"
     >
-      <h2 className="text-2xl font-bold !mb-4 text-white text-center">Contact Us</h2>
+      <h2 className="text-2xl font-bold !mb-4 text-white text-center">Contact Me</h2>
 
       <motion.div whileFocus={{ scale: 1.03 }} className="mb-4">
         <label className="block  !mb-1 text-white">Your Name</label>

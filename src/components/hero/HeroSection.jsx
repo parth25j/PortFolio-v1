@@ -2,25 +2,10 @@ import React from "react";
 import { profileSection } from "./HeroContent";
 import { motion } from "framer-motion";
 import {Typewriter} from 'react-simple-typewriter'
-
+import Image  from '../../assets/IMG_1065.jpg'
 const HeroSection = () => {
   return (
-    // <div>
-    //         <section className="min-h-screen  text-white flex flex-col items-center justify-center gap-10 !px-4 sm:flex-row ">
-    //   <div className="h-[220px] w-[220px] max-h-[300px] max-w-[310px] sm:h-[300px] sm:min-w-[300px] bg-white">
-    //     <img src=" " alt="imagePending" />
-    //   </div>
-    //   <div className=" h-full md:h-[400px]">
-    //   <h1 className="text-2xl font-bold !mb-4 text-left text-center sm:text-2xl md:text-6xl sm:tracking-tighter ">
-    //    {profileSection.heading}
-    //   </h1>
-    //   <p className="text-lg text-left text-gray-300 text-center md:text-2xl">
-    //     {profileSection.description}
-    //   </p>
-    //   </div>
-    // </section>bg-[#0f172a]
-
-    // </div>
+   
 
     <div className="min-h-screen  text-white flex items-center justify-center !px-4 !py-10]">
       <section className="w-full max-w-7xl flex flex-col sm:flex-row items-center justify-center gap-10">
@@ -29,10 +14,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="h-[220px] w-[220px] sm:h-[300px] sm:w-[300px] bg-white rounded-full overflow-hidden shadow-lg"
+          className="h-[220px] w-[220px] sm:h-[300px] sm:w-[300px]  rounded-full overflow-hidden shadow-lg"
         >
           <img
-            src={profileSection.photo}
+            src={Image}
             alt="Developer"
             className="object-cover h-full w-full"
           />
@@ -89,13 +74,16 @@ const HeroSection = () => {
     {profileSection.description}
   </p>
 
-  <motion.button
+{/* <a href="#projects" className=" cursor-pointer !mt-8 w-1/2 !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"> */}
+<motion.a
     whileHover={{ scale: 1.05 }}
     whileTap={{ scale: 0.97 }}
-    className=" cursor-pointer !mt-8 w-1/2 !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"
+    className=" cursor-pointer !mt-8 w-[300px] !px-6 !py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl shadow-md transition duration-300"
+    href="#projects"
   >
-    {profileSection.buttonText}
-  </motion.button>
+     <h2 className="text-center">{profileSection.buttonText}</h2>
+  </motion.a>
+{/* </a> */}
 </motion.div>
 
       </section>
